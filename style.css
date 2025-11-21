@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background: #0d0d0d;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.app {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #222;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bot {
+    flex-direction: row;
+}
+
+.user {
+    flex-direction: row-reverse;
+}
+
+.bubble {
+    max-width: 70%;
+    padding: 12px 15px;
+    border-radius: 15px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.bot .bubble {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.user .bubble {
+    background: #ff003c;
+}
+
+.input-area {
+    padding: 15px;
+    background: #111;
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 10px;
+}
+
+button {
+    width: 55px;
+    border: none;
+    background: #ff003c;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.typing {
+    color: #888;
+    font-style: italic;
+    margin-left: 10px;
+}
